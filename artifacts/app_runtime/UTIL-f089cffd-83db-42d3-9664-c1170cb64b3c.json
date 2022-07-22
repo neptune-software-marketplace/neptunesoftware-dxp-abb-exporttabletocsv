@@ -1,0 +1,501 @@
+{
+	"id": "f089cffd-83db-42d3-9664-c1170cb64b3c",
+	"createdAt": "2022-02-04T15:46:19.793Z",
+	"updatedAt": "2022-07-22T12:42:54.690Z",
+	"createdBy": "luuk.wosten@neptune-software.com",
+	"changedBy": "kristin.eliassen@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
+			"fieldName": "oTable",
+			"fieldParent": 0,
+			"fieldType": "sap.ui.table.Table",
+			"script": "",
+			"bindingValue": "Generic Array",
+			"bindingType": "h",
+			"bindingSource": "P9",
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "width",
+					"grouping": "Properties",
+					"value": "100%",
+					"script": "",
+					"translation": []
+				},
+				{
+					"attribute": "visibleRowCountMode",
+					"grouping": "Properties",
+					"value": "Auto",
+					"script": "",
+					"translation": []
+				},
+				{
+					"attribute": "alternateRowColors",
+					"grouping": "Properties",
+					"value": "true",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "3fb4bafa-7e6c-4fab-e809-5af23194ed1b",
+					"fieldName": "oCol1",
+					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
+					"fieldType": "sap.ui.table.Column",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "label",
+							"grouping": "Properties",
+							"value": "Col1",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sorted",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sortProperty",
+							"grouping": "Properties",
+							"value": "VALUE1",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filtered",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filterProperty",
+							"grouping": "Properties",
+							"value": "VALUE1",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "7068738e-5fe0-4cb5-c433-1ff624726e3c",
+							"fieldName": "oLabel1",
+							"fieldParent": "3fb4bafa-7e6c-4fab-e809-5af23194ed1b",
+							"fieldType": "sap.m.Label",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "{VALUE1}",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "d90cdd92-c1a9-4445-e7e0-5788c03bbd75",
+					"fieldName": "oCol2",
+					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
+					"fieldType": "sap.ui.table.Column",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "label",
+							"grouping": "Properties",
+							"value": "Col2",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sorted",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sortProperty",
+							"grouping": "Properties",
+							"value": "VALUE2",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filtered",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filterProperty",
+							"grouping": "Properties",
+							"value": "VALUE2",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "30855c98-eefd-4820-f647-281fd3c78cce",
+							"fieldName": "oLabel2",
+							"fieldParent": "d90cdd92-c1a9-4445-e7e0-5788c03bbd75",
+							"fieldType": "sap.m.Label",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "{VALUE2}",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "29129c35-ae61-46f6-ec06-117fe34c71ca",
+					"fieldName": "oCol3",
+					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
+					"fieldType": "sap.ui.table.Column",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "label",
+							"grouping": "Properties",
+							"value": "Col3",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sorted",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sortProperty",
+							"grouping": "Properties",
+							"value": "VALUE3",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filtered",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filterProperty",
+							"grouping": "Properties",
+							"value": "VALUE3",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "5635b314-4453-4998-b5c5-2b6b660f8d01",
+							"fieldName": "oLabel3",
+							"fieldParent": "29129c35-ae61-46f6-ec06-117fe34c71ca",
+							"fieldType": "sap.m.Label",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "{VALUE3}",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "cb7eca09-6bcc-49a7-f2f0-3af1d1b7bc3d",
+					"fieldName": "oCol4",
+					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
+					"fieldType": "sap.ui.table.Column",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "label",
+							"grouping": "Properties",
+							"value": "Col4",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sorted",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "sortProperty",
+							"grouping": "Properties",
+							"value": "VALUE4",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filtered",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "filterProperty",
+							"grouping": "Properties",
+							"value": "VALUE4",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "95f91e3f-cf4f-43b3-8a35-828152ead966",
+							"fieldName": "oLabel4",
+							"fieldParent": "cb7eca09-6bcc-49a7-f2f0-3af1d1b7bc3d",
+							"fieldType": "sap.m.Label",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "{VALUE4}",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": "fccd8ed3-9f94-4f8a-dc77-9b5dab39495f",
+			"fieldName": "oBarFooter",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Bar",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "position",
+					"grouping": "Parent",
+					"value": "setFooter",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "cf64e339-155b-4036-d6f0-5533c55079b2",
+					"fieldName": "Left",
+					"fieldParent": "fccd8ed3-9f94-4f8a-dc77-9b5dab39495f",
+					"fieldType": "neptune.BarContent",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "position",
+							"grouping": "Parent",
+							"value": "ContentLeft",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "c0094b3d-e623-4863-fbd7-a3b2e1eefe15",
+							"fieldName": "btnExport",
+							"fieldParent": "cf64e339-155b-4036-d6f0-5533c55079b2",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Export to CSV",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "icon",
+									"grouping": "Properties",
+									"value": "sap-icon://fa-solid/file-excel",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": [
+										"==OBJECT STRING==",
+										"jQuery.sap.require(\"sap.ui.core.util.Export\");",
+										"jQuery.sap.require(\"sap.ui.core.util.ExportTypeCSV\");",
+										"",
+										"// get current date",
+										"var today = new Date();",
+										"var dd = today.getDate();",
+										"var mm = today.getMonth() + 1;",
+										"var yyyy = today.getFullYear();",
+										"if (dd < 10) {",
+										"    dd = '0' + dd;",
+										"}",
+										"",
+										"if (mm < 10) {",
+										"    mm = '0' + mm;",
+										"}",
+										"",
+										"// get current time",
+										"var time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds();",
+										"today = mm + '/' + dd + '/' + yyyy;",
+										"",
+										"// set filename",
+										"var fileName = today + \" \" + time;",
+										"",
+										"//Change oTable for the component you wan to export",
+										"oTable.exportData({",
+										"        exportType: new sap.ui.core.util.ExportTypeCSV({",
+										"            separatorChar: \",\"",
+										"        })",
+										"    }).saveFile(fileName)",
+										"    .always(function() {",
+										"        this.destroy();",
+										"    });",
+										"",
+										"sap.m.MessageToast.show(\"Export File generated.\");"
+									],
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "8869650f-c1eb-4100-9158-e7e8f1e1b67c",
+					"fieldName": "oJavascript",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"// Only for View - Custom beforeDisplay - Trigger everytime the view is started",
+						"// Custom Init - Happens only once",
+						"sap.ui.getCore().attachInit(function(data) {",
+						"",
+						"    // instantiate model",
+						"    var oModel = new sap.ui.model.json.JSONModel();",
+						"",
+						"    // set table model and sample data",
+						"    var tableData = [{",
+						"        VALUE1: \"Value1\",",
+						"        VALUE2: \"Value2\",",
+						"        VALUE3: \"Value3\",",
+						"        VALUE4: \"Value4\",",
+						"    }];",
+						"",
+						"    // Some stuff needs to be timed later. Run them inside a timeout",
+						"    setTimeout(function() {",
+						"        //  Do something",
+						"        oModel.setData(tableData);",
+						"        sap.ui.getCore().byId(\"oTable\").setModel(oModel);",
+						"    }, 200);",
+						"",
+						"});"
+					],
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.7.22.1442",
+	"application": "neptbb_export_table_to_csv",
+	"title": "UTIL",
+	"description": "Export Table to CSV",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": true,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_belize",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": []
+}
