@@ -1,0 +1,29 @@
+// Only for View - Custom beforeDisplay - Trigger everytime the view is started
+// Custom Init - Happens only once
+sap.ui.getCore().attachInit(function(data) {
+
+    // instantiate model
+    var oModel = new sap.ui.model.json.JSONModel();
+
+    // set table model and sample data
+    var tableData = [{
+        VALUE1: "Value1",
+        VALUE2: "Value2",
+        VALUE3: "Value3",
+        VALUE4: "Value4",
+    },
+    {
+        VALUE1: "Value1",
+        VALUE2: "Value2",
+        VALUE3: "Value3",
+        VALUE4: "Value4",
+    }];
+
+    // Some stuff needs to be timed later. Run them inside a timeout
+    setTimeout(function() {
+        //  Do something
+        oModel.setData(tableData);
+        sap.ui.getCore().byId("oTable").setModel(oModel);
+    }, 200);
+
+});

@@ -1,9 +1,7 @@
 {
 	"id": "f089cffd-83db-42d3-9664-c1170cb64b3c",
 	"createdAt": "2022-02-04T15:46:19.793Z",
-	"updatedAt": "2022-07-22T12:42:54.690Z",
 	"createdBy": "luuk.wosten@neptune-software.com",
-	"changedBy": "kristin.eliassen@neptune-software.com",
 	"objects": [
 		{
 			"fieldNo": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
@@ -11,6 +9,7 @@
 			"fieldParent": 0,
 			"fieldType": "sap.ui.table.Table",
 			"script": "",
+			"customComponent": false,
 			"bindingValue": "Generic Array",
 			"bindingType": "h",
 			"bindingSource": "P9",
@@ -46,6 +45,7 @@
 					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
 					"fieldType": "sap.ui.table.Column",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -92,6 +92,7 @@
 							"fieldParent": "3fb4bafa-7e6c-4fab-e809-5af23194ed1b",
 							"fieldType": "sap.m.Label",
 							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
@@ -113,6 +114,7 @@
 					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
 					"fieldType": "sap.ui.table.Column",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -159,6 +161,7 @@
 							"fieldParent": "d90cdd92-c1a9-4445-e7e0-5788c03bbd75",
 							"fieldType": "sap.m.Label",
 							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
@@ -180,6 +183,7 @@
 					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
 					"fieldType": "sap.ui.table.Column",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -226,6 +230,7 @@
 							"fieldParent": "29129c35-ae61-46f6-ec06-117fe34c71ca",
 							"fieldType": "sap.m.Label",
 							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
@@ -247,6 +252,7 @@
 					"fieldParent": "de4ee25d-8aaf-4b81-d29a-444a7aef566f",
 					"fieldType": "sap.ui.table.Column",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -293,6 +299,7 @@
 							"fieldParent": "cb7eca09-6bcc-49a7-f2f0-3af1d1b7bc3d",
 							"fieldType": "sap.m.Label",
 							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
@@ -316,6 +323,7 @@
 			"fieldParent": 0,
 			"fieldType": "sap.m.Bar",
 			"script": "",
+			"customComponent": false,
 			"request": [],
 			"response": [],
 			"attributes": [
@@ -334,6 +342,7 @@
 					"fieldParent": "fccd8ed3-9f94-4f8a-dc77-9b5dab39495f",
 					"fieldType": "neptune.BarContent",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -352,6 +361,7 @@
 							"fieldParent": "cf64e339-155b-4036-d6f0-5533c55079b2",
 							"fieldType": "sap.m.Button",
 							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
@@ -373,43 +383,7 @@
 									"attribute": "press",
 									"grouping": "Events",
 									"value": "Anonymous Function",
-									"script": [
-										"==OBJECT STRING==",
-										"jQuery.sap.require(\"sap.ui.core.util.Export\");",
-										"jQuery.sap.require(\"sap.ui.core.util.ExportTypeCSV\");",
-										"",
-										"// get current date",
-										"var today = new Date();",
-										"var dd = today.getDate();",
-										"var mm = today.getMonth() + 1;",
-										"var yyyy = today.getFullYear();",
-										"if (dd < 10) {",
-										"    dd = '0' + dd;",
-										"}",
-										"",
-										"if (mm < 10) {",
-										"    mm = '0' + mm;",
-										"}",
-										"",
-										"// get current time",
-										"var time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds();",
-										"today = mm + '/' + dd + '/' + yyyy;",
-										"",
-										"// set filename",
-										"var fileName = today + \" \" + time;",
-										"",
-										"//Change oTable for the component you wan to export",
-										"oTable.exportData({",
-										"        exportType: new sap.ui.core.util.ExportTypeCSV({",
-										"            separatorChar: \",\"",
-										"        })",
-										"    }).saveFile(fileName)",
-										"    .always(function() {",
-										"        this.destroy();",
-										"    });",
-										"",
-										"sap.m.MessageToast.show(\"Export File generated.\");"
-									],
+									"script": "file://event/sap.m.Button/btnExport/press.script",
 									"translation": []
 								}
 							],
@@ -427,32 +401,8 @@
 					"fieldName": "oJavascript",
 					"fieldParent": 99999,
 					"fieldType": "neptune.Script",
-					"script": [
-						"==OBJECT STRING==",
-						"// Only for View - Custom beforeDisplay - Trigger everytime the view is started",
-						"// Custom Init - Happens only once",
-						"sap.ui.getCore().attachInit(function(data) {",
-						"",
-						"    // instantiate model",
-						"    var oModel = new sap.ui.model.json.JSONModel();",
-						"",
-						"    // set table model and sample data",
-						"    var tableData = [{",
-						"        VALUE1: \"Value1\",",
-						"        VALUE2: \"Value2\",",
-						"        VALUE3: \"Value3\",",
-						"        VALUE4: \"Value4\",",
-						"    }];",
-						"",
-						"    // Some stuff needs to be timed later. Run them inside a timeout",
-						"    setTimeout(function() {",
-						"        //  Do something",
-						"        oModel.setData(tableData);",
-						"        sap.ui.getCore().byId(\"oTable\").setModel(oModel);",
-						"    }, 200);",
-						"",
-						"});"
-					],
+					"script": "file://script/neptune.Script/oJavascript.script",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [],
@@ -465,7 +415,8 @@
 			"data": []
 		}
 	],
-	"ver": "22.7.22.1442",
+	"componentInterface": [],
+	"ver": "22.12.6.1545",
 	"application": "neptbb_export_table_to_csv",
 	"title": "UTIL",
 	"description": "Export Table to CSV",
@@ -487,6 +438,7 @@
 	"ui5_theme": "sap_belize",
 	"ui5_version": "",
 	"ui5_language": null,
+	"ui5_url": "",
 	"cus_theme": "",
 	"css": "",
 	"header": "",
@@ -497,5 +449,9 @@
 	"libHighmap": false,
 	"publicAccess": false,
 	"ui5_bootstrap": false,
-	"apis": []
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [],
+	"package": "dcb521c3-bb09-ed11-b47a-000d3ab2359f"
 }
